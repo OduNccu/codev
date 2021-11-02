@@ -1,0 +1,31 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main ()
+{
+  int k1, k2, k3, k4, cevre, alan;
+  int deger;
+  double sonuc;
+  cout << "DIKKAT: c kenarı taban olarak kabul edilmektedir!";
+  cout << endl;
+  cout << "a kenarinin uzunlugunu giriniz:  ";
+  cin >> k1;
+  cout << endl;
+  cout << "b kenarinin uzunlugunu giriniz:  ";
+  cin >> k2;
+  cout << endl;
+  cout << "c(taban) kenarinin uzunlugunu giriniz:  ";
+  cin >> k3;
+  cout << endl;
+  cout << "yüksekligi giriniz:  ";
+  cin >> k4;
+  cout << endl;
+  cevre = k1 + k2 + k3;
+  cout << "abc ucgeninin cevre uzunlugu:  " << cevre;
+  cout << endl;
+  alan = k3 * k4 / 2;
+  cout << "abc ucgeninin alani:  " << alan;
+
+  cout << endl;
+}
