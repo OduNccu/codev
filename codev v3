@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+
+class Ucgen
+{
+private:
+	int a, b, c, h, cevre, alan;
+public:
+	int setCevre(int a = 3, int b = 4, int c = 5, int cevre = 12 ) {
+		this->a = a;
+		this->b = b;
+		this->c = c;
+		this->cevre = cevre;
+		
+		cevre = a + b + c;
+		return cevre;
+	}
+	int setAlan(int a = 3, int b = 4, int c = 5, int h = 4, int alan = 6) {
+		this->a = a;
+		this->b = b;
+		this->c = c;
+		this->h = h;
+		this->alan = alan;
+	}
+
+
+
+
+};
+int main() {
+	Ucgen obj;
+	int a;
+	cin >> a;
+	obj.setCevre(a);
+
+
+	return 0;
+}
