@@ -1,60 +1,77 @@
- #include<iostream>
-  #include<math.h>
+#include<iostream>
+#include<math.h>
 
 
-  using namespace std;
-  class Triangle
+using namespace std;
+class Triangle
 {
-   private:
-   int prvt1 = 3;
+private:
+  int prvt1 = 3;
 
-        public:
-           double hipotenus(int, int);
-           double kalan(int);
+public:
+  double hipotenus (int, int);
+  double kalan (int);
 };
 
 
 
-int main()
+int
+main ()
 {
-   int k1,k2;
-   int deger;
-   double sonuc;
-   cout << "a kenarını giriniz:  ";
-   cin >> k1;
-   cout << endl;
-   cout << "b kenarını giriniz:  ";
-   cin >> k2;
-   cout << endl;
-   Triangle nesneucgen;
-   sonuc = nesneucgen.hipotenus(k1, k2);
+  int k1, k2, k3, k4, cevre, alan;
+  int deger;
+  double sonuc;
+  cout << "a kenarini giriniz:  ";
+  cin >> k1;
+  cout << endl;
+  cout << "b kenarini giriniz:  ";
+  cin >> k2;
+  cout << endl;
+  cout << "c kenarini giriniz:  ";
+  cin >> k3;
+  cout << endl;
+  cout << "yüksekligi giriniz:  ";
+  cin >> k4;
+  cout << endl;
+  cevre = k1 + k2 + k3;
+  cout << "abc ucgeninin cevre uzunlugu:  " << cevre;
+  cout << endl;
+  alan = k3 * k4 / 2;
+  cout << "abc ucgeninin alani:  " << alan;
 
-    cout << endl;
-    cout << "UCGENIN HIPOTENUSU = " << sonuc << endl;
+  cout << endl;
+  //Triangle nesneucgen;
+  //sonuc = nesneucgen.hipotenus(k1, k2);
 
-    cout << "BIR SAYI GIRINIZ:  ";
-    cin >> deger;
-    cout << endl;
-    double sayi2;
-    sayi2 = nesneucgen.kalan(deger);
-    cout << "GIRDIGINIZ SAYININ 3 E BOLUMUNDEN KALAN = " << sayi2;
+  cout << endl;
+  //cout << "UCGENIN HIPOTENUSU = " << sonuc << endl;
 
-    cin.get();
-    cin.get();
-    return 0;
+  //cout << "BIR SAYI GIRINIZ:  ";
+  //cin >> deger;
+  //cout << endl;
+  //double sayi2;
+  // sayi2 = nesneucgen.kalan(deger);
+  //cout << "GIRDIGINIZ SAYININ 3 E BOLUMUNDEN KALAN = " << sayi2;
+
+  cin.get ();
+  cin.get ();
+  return 0;
 }
-  double Triangle::hipotenus(int dkenar1, int dkenar2)
+
+double
+Triangle::hipotenus (int dkenar1, int dkenar2)
 {
-    double pkenar1 = pow(dkenar1,2);
-    double pkenar2 = pow(dkenar2,2);
-    double tkenar = pkenar1 + pkenar2;
-    double hptns = sqrt(tkenar);
-    return hptns;
+  double pkenar1 = pow (dkenar1, 2);
+  double pkenar2 = pow (dkenar2, 2);
+  double tkenar = pkenar1 + pkenar2;
+  double hptns = sqrt (tkenar);
+  return hptns;
 }
- double Triangle::kalan(int sayi)
+
+double
+Triangle::kalan (int sayi)
 {
-    double toplam;
-    toplam = sayi%Triangle::prvt1;
-    return toplam;
+  double toplam;
+  toplam = sayi % Triangle::prvt1;
+  return toplam;
 }
- 
